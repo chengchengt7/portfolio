@@ -1,6 +1,7 @@
 import videoPokerHero from "../assets/video-poker/hero.png";
 import savrVideo from "../assets/SVAR/home-SVAR-video-transparent.webm";
 import savrTablet from "../assets/SVAR/home-SAVR-tablet.png";
+import savrDemo from "../assets/SVAR/SAVR walk through.mp4";
 import type { ProjectCardProps } from "../components/ProjectCard/ProjectCard";
 import "./projects.css";
 
@@ -61,7 +62,7 @@ export const projects: Project[] = [
     actions: [
       {
         label: "Watch demo",
-        href: "src/assets/SVAR/SAVR walk through.mp4",
+        href: savrDemo,
       },
       {
         label: "View case study",
