@@ -1,0 +1,10 @@
+.statement {
+  padding: 1rem;
+  margin-block-start: 5rem;
+
+  p {
+    font-size: 1.5rem;
+    margin-block-start: 1.5rem;
+  }
+  
+}
