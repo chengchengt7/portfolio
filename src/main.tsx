@@ -6,6 +6,7 @@ import Nav from "./components/Nav/Nav";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 
+// Velkommen! Takk for at du besøker porteføljen min. Jeg setter pris på tilbakemeldinger! 😊 
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

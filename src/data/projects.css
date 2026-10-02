@@ -1,0 +1,44 @@
+.poker-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 200ms ease;
+}
+
+.savr-showcase {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  width: 100%;
+  height: 100%;
+}
+
+.savr-showcase-video {
+  width: 36%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.savr-showcase-tablet {
+  width: 60%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-media {
+    transition: none;
+  }
+
+  .card-visual:hover .project-media {
+    transform: none;
+  }
+}
+
+@media (max-width: 43.75rem) {
+  .savr-showcase {
+    min-height: 14rem;
+  }
+}

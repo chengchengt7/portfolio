@@ -19,18 +19,6 @@
   border-radius: 0.75rem;
 }
 
-.project-media {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 200ms ease;
-}
-
-.card-visual:hover .project-media {
-  transform: scale(1.02);
-}
-
 .card-visual:focus-visible {
   outline: 3px solid var(--color900);
   outline-offset: 3px;
@@ -108,12 +96,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .project-media,
   .project-actions a {
     transition: none;
   }
 
-  .card-visual:hover .project-media,
   .project-actions a:hover {
     transform: none;
   }
