@@ -1,7 +1,9 @@
+import ThingsIBelieve from "../../components/About-sec2/About-sec2";
+
 export default function About() {
   return (
     <main>
-      <h1>About</h1>
+      <ThingsIBelieve />
     </main>
   );
 }

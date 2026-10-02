@@ -9,7 +9,7 @@ export default function Nav() {
           <NavLink to="/">Chengcheng Teng</NavLink>
         </li>
         <li>
-          <NavLink to="/projects">Projects</NavLink>
+          <a href="/#projects">Projects</a>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
