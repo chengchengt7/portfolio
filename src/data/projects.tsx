@@ -2,6 +2,8 @@ import videoPokerHero from "../assets/video-poker/hero.png";
 import savrVideo from "../assets/SAVR/home-SAVR-video-transparent.webm";
 import savrTablet from "../assets/SAVR/home-SAVR-tablet.png";
 import savrDemo from "../assets/SAVR/SAVR walk through.mp4";
+import foraDemo from "../assets/Fora/fora-walk-through.mp4";
+import foraCard from "../assets/Fora/fora-card.PNG?url";
 import type { ProjectCardProps } from "../components/ProjectCard/ProjectCard";
 import "./projects.css";
 
@@ -13,7 +15,7 @@ export const projects: Project[] = [
   {
     id: "video-poker",
     name: "Video Poker Game",
-    skills: ["React", "Vite", "Zustand", "React Router", "TypeScript"],
+    skills: ["React", "Zustand", "React Router", "TypeScript"],
     description:
       "A browser-based video poker game built with React and TypeScript.",
     media: (
@@ -37,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     id: "savr",
-    name: "SAVR — Personal Recipe Manager",
+    name: "SAVR - Personal Recipe Manager",
     skills: ["UX design", "Product design"],
     description:
       "SAVR is a retro-inspired recipe journal for capturing your unique culinary adventures. With no preloaded library, it's a hand-picked collection of dishes you've cooked, loved, and plan to try, enhanced by shopping list generation and AI-powered search.",
@@ -61,13 +63,60 @@ export const projects: Project[] = [
     ),
     actions: [
       {
-        label: "Watch demo",
-        href: savrDemo,
-      },
-      {
         label: "View case study",
         href: "/projects/savr",
+      },
+      {
+        label: "Watch demo",
+        href: savrDemo,
         internal: true,
+        variant: "secondary",
+      },
+    ],
+  },
+  {
+    id: "fora",
+    name: "Fora - discover edible wild plants",
+    skills: [
+      "Product design",
+      "UX design",
+      "TypeScript",
+      "API integration",
+      "Gemini AI",
+    ],
+    description:
+      "Discover edible wild plants around you! Perfect for foragers and wild-food enthusiasts.",
+    media: (
+      <div className="fora-showcase">
+        <video
+          className="fora-video"
+          src={foraDemo}
+          aria-label="Fora plant discovery walkthrough preview"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <img
+          className="fora-image"
+          src={foraCard}
+          alt="Fora plant discovery app screenshot"
+        />
+      </div>
+    ),
+    actions: [
+      {
+        label: "View case study",
+        href: "",
+      },
+      {
+        label: "Watch demo",
+        href: foraDemo,
+        variant: "secondary",
+      },
+      {
+        label: "View code",
+        href: "https://github.com/chengchengt7/Fora---discover-edible-wild-plants",
         variant: "secondary",
       },
     ],
