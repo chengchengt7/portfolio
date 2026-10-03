@@ -1,15 +1,17 @@
 import type { ReactNode } from "react";
+import { Link } from "react-router";
 import "./ProjectCard.css";
 
 type ProjectAction = {
   label: string;
   href: string;
+  internal?: boolean;
   variant?: "primary" | "secondary";
 };
 
 export type ProjectCardProps = {
   name: string;
-  technologies: string[];
+  skills: string[];
   description: string;
   media: ReactNode;
   actions: ProjectAction[];
@@ -17,7 +19,7 @@ export type ProjectCardProps = {
 
 export default function ProjectCard({
   name,
-  technologies,
+  skills,
   description,
   media,
   actions,
@@ -28,15 +30,20 @@ export default function ProjectCard({
 
       <div className="card-des">
         <h2>{name}</h2>
-        <ul className="tech-labels" aria-label="Technologies used">
-          {technologies.map((technology) => (
-            <li key={technology}>{technology}</li>
+        <ul className="skill-labels" aria-label="Skill labels">
+          {skills.map((skill) => (
+            <li key={skill}>{skill}</li>
           ))}
         </ul>
         <p>{description}</p>
 
         <div className="project-actions">
-          {actions.map(({ label, href, variant = "primary" }) => (
+          {actions.map(({ label, href, internal, variant = "primary" }) => (
+            internal ? (
+              <Link className={`${variant}-action`} to={href} key={`${label}-${href}`}>
+                {label}
+              </Link>
+            ) : (
             <a
               className={`${variant}-action`}
               href={href}
@@ -46,6 +53,7 @@ export default function ProjectCard({
             >
               {label}
             </a>
+            )
           ))}
         </div>
       </div>

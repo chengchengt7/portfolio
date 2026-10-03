@@ -1,7 +1,7 @@
 import videoPokerHero from "../assets/video-poker/hero.png";
-import savrVideo from "../assets/SVAR/home-SVAR-video-transparent.webm";
-import savrTablet from "../assets/SVAR/home-SAVR-tablet.png";
-import savrDemo from "../assets/SVAR/SAVR walk through.mp4";
+import savrVideo from "../assets/SAVR/home-SAVR-video-transparent.webm";
+import savrTablet from "../assets/SAVR/home-SAVR-tablet.png";
+import savrDemo from "../assets/SAVR/SAVR walk through.mp4";
 import type { ProjectCardProps } from "../components/ProjectCard/ProjectCard";
 import "./projects.css";
 
@@ -13,7 +13,7 @@ export const projects: Project[] = [
   {
     id: "video-poker",
     name: "Video Poker Game",
-    technologies: ["React", "Vite", "Zustand", "React Router", "TypeScript"],
+    skills: ["React", "Vite", "Zustand", "React Router", "TypeScript"],
     description:
       "A browser-based video poker game built with React and TypeScript.",
     media: (
@@ -36,9 +36,9 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "svar",
+    id: "savr",
     name: "SAVR — Personal Recipe Manager",
-    technologies: ["UX design", "Product design"],
+    skills: ["UX design", "Product design"],
     description:
       "SAVR is a retro-inspired recipe journal for capturing your unique culinary adventures. With no preloaded library, it's a hand-picked collection of dishes you've cooked, loved, and plan to try, enhanced by shopping list generation and AI-powered search.",
     media: (
@@ -66,7 +66,8 @@ export const projects: Project[] = [
       },
       {
         label: "View case study",
-        href: "",
+        href: "/projects/savr",
+        internal: true,
         variant: "secondary",
       },
     ],
