@@ -2,8 +2,8 @@ import videoPokerHero from "../assets/video-poker/hero.png";
 import savrVideo from "../assets/SAVR/home-SAVR-video-transparent.webm";
 import savrTablet from "../assets/SAVR/home-SAVR-tablet.png";
 import savrDemo from "../assets/SAVR/SAVR walk through.mp4";
-import foraDemo from "../assets/Fora/fora-walk-through.mp4";
-import foraCard from "../assets/Fora/fora-card.PNG?url";
+import foraDemo from "../assets/Fora/fora-walk-through.webm";
+import foraCard from "../assets/Fora/4.png";
 import type { ProjectCardProps } from "../components/ProjectCard/ProjectCard";
 import "./projects.css";
 
@@ -107,7 +107,8 @@ export const projects: Project[] = [
     actions: [
       {
         label: "View case study",
-        href: "",
+        href: "/projects/fora",
+        internal: true,
       },
       {
         label: "Watch demo",
